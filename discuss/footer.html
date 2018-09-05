@@ -1,0 +1,40 @@
+
+</div>
+
+
+</div>
+<script src="js/jquery.nouislider.js"></script>
+
+<!-- this page specific inline scripts -->
+<script>
+    //min/max slider
+    function huadong(my, unit, def, max) {
+        $(my).noUiSlider({
+            range: [0, max],
+            start: [def],
+            handles: 1,
+            connect: 'upper',
+            slide: function() {
+                var val = Math.floor($(this).val());
+                $(this).find(".noUi-handle").text(
+                    val + unit
+                );
+                console.log($(this).find(".noUi-handle").parent().parent().html());
+            },
+            set: function() {
+                var val = Math.floor($(this).val());
+                $(this).find(".noUi-handle").text(
+                    val + unit
+                );
+            }
+        });
+        $(my).val(def, true);
+    }
+    huadong('.slider-minmax1', "分钟", "5", 30);
+    huadong('.slider-minmax2', "分钟", "6", 15);
+    huadong('.slider-minmax3', "分钟", "10", 60);
+    huadong('.slider-minmax4', "次", "2", 10);
+    huadong('.slider-minmax5', "天", "3", 7);
+    huadong('.slider-minmax6', "天", "8", 10);
+</script>
+</body>

@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<title>注册</title>
+	<link rel="stylesheet" media="screen" href="css/css.css" />
+</head>
+<body>
+<form action="../login/register.php"  id="msform"  method="post">
+	<fieldset>
+		<h2 class="fs-title">注册</h2>
+		<input type="text" name="username" required="" placeholder="用户名" />
+		<input type="password" name="password" required="" placeholder="密码" />
+		<input type="password" name="cpass" required="" placeholder="确认密码" />
+		<input type="text" name="email" required="" placeholder="邮箱" />
+		<input type="text" name="description" placeholder="描述" />
+		<input type="text" placeholder="验证码" id="code_input" />
+		<div id="v_container" style="width: 43%;height: 47px;"></div>
+
+		<input type="submit"  id="sub-register"  class="submit action-button" value="确定" />
+	</fieldset>
+</form>
+<br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br>
+
+</body>
+<script src="../login/js/gVerify.js"></script>
+<script>
+    var verifyCode = new GVerify("v_container");
+
+    document.getElementById("sub-register").onclick = function(){
+        var res = verifyCode.validate(document.getElementById("code_input").value);
+        if(res==false){
+            /* alert("验证码输入错误");*/
+            document.getElementById("code_input").value='';
+            return false;
+        }
+    }
+</script>
+</html>
