@@ -9,7 +9,7 @@ include_once "login_require.php";
 include_once "../sqlhelper.php";
 if (isset($_GET['file'])){
     $file = $_GET['file'];
-    $userid = 1;
+    $userid = $_SESSION['userid'];
     $time = date("Y-m-d H:i:s");
     $mysqli= new sqlhelper();
     $sql = "INSERT INTO data_school_file(userid, file_name, time) VALUE ('$userid','$file','$time')";
