@@ -1,5 +1,5 @@
 <?php
-include_once "../connectwangmengmeng.php";
+include_once "connect.php";
 include_once "file_upload.php";
 //为优化语句定义下列变量
 $file_name = $uploaded_name;
