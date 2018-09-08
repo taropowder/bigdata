@@ -32,9 +32,8 @@ if (isset($_POST['type']))
         }
         else
         {
-            $uploaded_name=iconv("UTF-8","gb2312", $uploaded_name);//防中文乱码
+            $uploaded_name=iconv("gbk","UTF-8", $uploaded_name);//防中文乱码
             move_uploaded_file($uploaded_tmp,$target_path."$uploaded_name");
-            //$uploaded_name=iconv("gb2312","UTF-8", $uploaded_name);
         }
         $data_table_name=$target_folder;
         include_once "data_insert.php";

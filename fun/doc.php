@@ -34,7 +34,7 @@ include_once "connect.php";
 <body>
 <header>
     <div class="container">
-        <a href="#" class="download-sec right">退出</a>
+        <a href="../" class="download-sec right">退出</a>
         <div class="profile-img">
             <a href="index.php" title="主页">
                 <img src="images/photo.png" alt="img" width="360px" height="330px">
