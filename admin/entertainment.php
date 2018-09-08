@@ -100,6 +100,7 @@ if(isset($_GET['articletitle'])){
                     echo "</tbody>";
                 }
             }
+            mysqli_close($connect);
             ?>
         </table>
     </div>

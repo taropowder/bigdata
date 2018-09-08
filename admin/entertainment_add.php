@@ -28,9 +28,9 @@ if (isset($_POST['type']))
         }
         else
         {
-            $name=iconv("UTF-8","gb2312", $uploaded_name);//防中文乱码
+            $name=iconv("gbk","UTF-8", $uploaded_name);//防中文乱码
             move_uploaded_file($uploaded_tmp,$target_path."$name");
-            $uploaded_name=iconv("gb2312","UTF-8", $name);
+            //$uploaded_name=iconv("gb2312","UTF-8", $name);
         }
         $data_table_name=$target_folder;
         include_once "entertainment_data_insert.php";

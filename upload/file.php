@@ -85,7 +85,7 @@ include_once "connect.php";
                     <tbody>
                     <?php
                     include_once "connect.php";
-                    $dir="./upload/file_upload/file/";
+                    $dir="file_upload/file/";
                     $sql = "SELECT * FROM file_type_file";
                     $result = mysqli_query($connect, $sql);
                     while(@$data=mysqli_fetch_array($result))

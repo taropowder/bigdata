@@ -84,7 +84,7 @@ $_SESSION['enter_time'] = date("Y-m-d H-i-s");
                     <tbody>
 					<!--用于将已上传文件信息打印出来-->
 					<?php
-						$dir="./upload/file_upload/pic/";
+						$dir="file_upload/pic/";
 						$sql = "SELECT * FROM file_type_pic";
 						$result = mysqli_query($connect, $sql);
 						while($data=mysqli_fetch_array($result))
@@ -93,7 +93,7 @@ $_SESSION['enter_time'] = date("Y-m-d H-i-s");
 							echo "<td>{$data['id']}</td>";
 							echo "<td><a href='./upload/download.php?filename=$dir{$data['name']}' title='点击查看'>";
 							echo "<div class='folio_small'>";
-							echo "<img src='$dir{$data['name']}'  width='100%' height='100%'/>";
+							echo "<img src='./upload/'.'$dir{$data['name']}'  width='100%' height='100%'/>";
 							echo "<div class='zoom-icons'>";
 							echo "<p>{$data['name']}</p>";
 							echo "</div>";

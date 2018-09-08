@@ -85,6 +85,7 @@
 						echo "</tr>";
 					}
 				}
+                mysqli_close($connect);
 				?>
             </tbody>
         </table>
