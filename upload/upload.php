@@ -42,7 +42,6 @@ include_once "login_require.php";
 <?php
 include 'footer.php';
 ?>
-<script src="js/jquery.htools.select.js"></script>
 <script type="text/javascript">
     var $select = $("#select");
     var $myselect = $("#myselect");

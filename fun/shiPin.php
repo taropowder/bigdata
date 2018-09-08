@@ -12,10 +12,10 @@ $file_name = $_GET['file_name'];
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Title</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <script src="../js/jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
     <style type="text/css">
         #packtpub{
             margin-left: 25px;
