@@ -85,6 +85,7 @@ include_once "connect.php";
                     <?php
                     include_once "connect.php";
                     $dir="./upload/file_upload/doc/";
+                    $download_dir = "file_upload/doc/";
                     $sql = "SELECT * FROM file_type_doc";
                     $result = mysqli_query($connect, $sql);
                     while(@$data=mysqli_fetch_array($result))
@@ -93,7 +94,7 @@ include_once "connect.php";
                         echo "<td>{$data['id']}</td>";
                         echo "<td>{$data['name']}</td>";
                         echo "<td>{$data['time']}</td>";
-                        echo "<td><a href='./upload/download.php?filename=$dir{$data['name']}'>点击下载</a></td>";
+                        echo "<td><a href='./upload/download.php?filename=$download_dir{$data['name']}'>点击下载</a></td>";
                         echo "</tr>";
                     }
                     ?>
