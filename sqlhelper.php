@@ -35,6 +35,10 @@
                 }
             }
         }
+        function __destruct(){
+            $this->close_sql();
+        }
+
         public function close_sql(){
             $this->mysqli->close();
         }

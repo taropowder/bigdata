@@ -58,6 +58,15 @@ include_once "requre.php";
 			</ul>
 		</dd>
 	</dl>
+        <dl id="menu-article">
+            <dt> <span class="icon-sec"><i class="fas fa-object-group"></i></span>公告管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+            <dd>
+                <ul>
+                    <li>
+                        <a data-href="announcement.php" data-title="公告管理" href="javascript:void(0)">公告管理</a></li>
+                </ul>
+            </dd>
+        </dl>
 		<dl id="menu-picture">
 			<dt><span class="icon-sec"><i class="fas fa-newspaper"></i></span> 动态管理</a><i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>

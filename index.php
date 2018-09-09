@@ -24,6 +24,7 @@
         <div class="tm-main-content">
             <div class="nav">
                 <ul>
+                    <li><a href="announcement">公告</a></li>
                     <li><a href="upload/tool.php">工具下载</a></li>
                     <li><a href="journal">期刊会议</a></li>
                     <li><a href="meeting">会议动态</a></li>
