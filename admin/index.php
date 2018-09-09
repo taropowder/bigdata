@@ -10,17 +10,17 @@ include_once "requre.php";
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
 <meta http-equiv="Cache-Control" content="no-siteapp" />
 <!--[if lt IE 9]>
-<script type="text/javascript" src="lib/html5shiv.js"></script>
-<script type="text/javascript" src="lib/respond.min.js"></script>
+<script type="text/javascript" src="../lib/html5shiv.js"></script>
+<script type="text/javascript" src="../lib/respond.min.js"></script>
 <![endif]-->
 	<link rel="stylesheet" type="text/css" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
-<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
-<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="../lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="../static/h-ui.admin/css/style.css" />
 <!--[if IE 6]>
-<script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript" src="../lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
 <![endif]-->
 <title>系统管理员</title>
@@ -141,12 +141,12 @@ include_once "requre.php";
 </div>
 <!--_footer 作为公共模版分离出去-->
 <script type="text/javascript" src="../js/jquery.js"></script>
-<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
-<script type="text/javascript" src="static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="../lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="../static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="../static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
 <script src="../js/fontawesome.js"></script>
 <!--请在下方写此页面业务相关的脚本-->
-<script type="text/javascript" src="lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
+<script type="text/javascript" src="../lib/jquery.contextmenu/jquery.contextmenu.r2.js"></script>
 <script type="text/javascript">
 $(function(){
 	/*$("#min_title_list li").contextMenu('Huiadminmenu', {
