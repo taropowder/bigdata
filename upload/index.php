@@ -1,4 +1,10 @@
 <?php
+session_start();
+include_once "login_require.php";
+include_once "./about_db/print_list.php";
+include_once "connect.php";
+?>
+<?php
 include 'base.php';
 ?>
 <body>
