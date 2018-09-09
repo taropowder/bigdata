@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "./about_db/print_list.php";
+include_once "print_list.php";
 include_once "connect.php";
 ?>
 <!DOCTYPE html>

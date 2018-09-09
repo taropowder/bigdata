@@ -1,7 +1,6 @@
 <?php
 session_start();
-include_once "./about_db/enter_leave_time.php";
-include_once "./about_db/print_list.php";
+include_once "print_list.php";
 include_once "connect.php";
 ?>
 <?php
@@ -28,8 +27,10 @@ $file_name = $_GET['file_name'];
     </style>
 </head>
 <script language="javascript">
+    // alert('fuck');
     window.onbeforeunload=function() {
         var xhr=new XMLHttpRequest();
+        alert('fuck');
         xhr.open('get','enter_leave_time.php?old_time=<?php date_default_timezone_set('PRC');
             echo date("Y-m-d H:i:s");?>');
         xhr.send(null);
