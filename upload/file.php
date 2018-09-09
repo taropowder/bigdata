@@ -2,18 +2,7 @@
 <?php
 include 'base.php';
 ?>
-<body>
-<header>
-    <div class="container">
-        <a href="upload.php" class="download-sec left" id="upload">上传</a>
-        <a href="../" class="download-sec right">退出</a>
-        <div class="profile-img">
-            <a href="index.php" title="主页">
-                <img src="../images/photo.png" alt="img" width="360px" height="330px">
-            </a>
-        </div>
-    </div>
-</header>
+
 <section class="portfolio-section portfolio-inner" id="upl">
     <div class="main-container section-padding">
         <div id="portfolio">
