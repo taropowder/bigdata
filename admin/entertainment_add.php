@@ -28,24 +28,26 @@ if (isset($_POST['type']))
         }
         else
         {
-            $name=iconv("UTF-8","gb2312", $uploaded_name);//防中文乱码
-            move_uploaded_file($uploaded_tmp,$target_path."$name");
-            $uploaded_name=iconv("gb2312","UTF-8", $name);
-        }
-        $data_table_name=$target_folder;
-        include_once "entertainment_data_insert.php";
-        echo "  <script>
+            //$coding_type =  mb_detect_encoding($uploaded_name);
+            //$uploaded_name=iconv("$coding_type","UTF-8", $uploaded_name);//字符编码转换
+            if(move_uploaded_file($uploaded_tmp,$target_path."$uploaded_name"))
+            {
+                //$uploaded_name=iconv("gb2312","UTF-8", $uploaded_name);
+                $data_table_name = $target_folder;
+                include_once "entertainment_data_insert.php";
+                echo "  <script>
                     alert('上传成功');
                     window.location = 'entertainment.php';
                     </script>
                   ";//上传文件
-
+            }
+        }
     }
     else
     {
         die("	<script>
 				alert('非法文件，请检查您的文件');
-				window.location = 'entertainment.php';
+				window.location = '../';
                 </script></script>");
     }
 }

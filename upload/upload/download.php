@@ -10,8 +10,7 @@ header('Content-Length:' . filesize($file_data));
 //读取文件并写入到输出缓冲
 readfile($file_data);
 $name_arr = preg_split('/\//',"$file_data");
-$file_name = $name_arr[count($name_arr)-1];
-echo $file_name;
+$file_name = end($name_arr);
 $time = date("Y-m-d H-i-s");
 $sql = "insert into download(name,time,userid) values('$file_name','$time',{$_SESSION['userid']})";
 mysqli_query($connect, $sql);

@@ -24,17 +24,18 @@ if (isset($_POST['type']))
                   ");//上传文件
 		}
 		else
-		{
-            $uploaded_name=iconv("UTF-8","gb2312", $uploaded_name);//防中文乱码
+        {
+		    //$coding_type =  mb_detect_encoding($uploaded_name,array("UTF-8","GBK","GB2312","ASCII"));
+            //$uploaded_name=iconv($coding_type,"UTF-8", $uploaded_name);//防中文乱码
 			move_uploaded_file($uploaded_tmp,$target_path."$uploaded_name");
-		}
             $data_table_name=$target_folder;
             include_once "data_insert.php";
-			echo "  <script>
+            echo "  <script>
                     alert('上传成功');
                     window.location = \"../index.php\";
                     </script>
                   ";//上传文件
+		}
 
     }
     else

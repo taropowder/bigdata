@@ -1,13 +1,13 @@
 <?php
-    $database_host = "127.0.0.1";
+    $database_host = "meng.taropowder.cn";
     $database_user = "root";
-    $database_pass = "";
+    $database_pass = "wangmengmeng";
     $database_db = "bigdata";
     class sqlhelper{
         private $mysqli;
-        private static $host="127.0.0.1";
+        private static $host="meng.taropowder.cn";
         private static $user="root";
-        private static $pwd="rppt";
+        private static $pwd="wangmengmeng";
         private static $db="bigdata";
 
         public function  __construct()
