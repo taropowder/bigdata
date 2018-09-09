@@ -1,6 +1,6 @@
 <?php
-include_once "../connect.php";
-include_once "entertainment-add.php";
+include_once "connect.php";
+include_once "entertainment_add.php";
 //为优化语句定义下列变量
 $file_name = $uploaded_name;
 $upload_time=$time;

@@ -49,7 +49,8 @@ if(isset($_GET['articletitle'])){
 
 <div class="text-c">
     <form class="Huiform" method="post" action="entertainment_add.php" target="_self" enctype="multipart/form-data">
-			<span class="btn-upload form-group">
+            <input type="hidden" name ="MAX_FILE_SIZE" value="4000000000"/>
+            <span class="btn-upload form-group">
 			<input class="input-text upload-url" type="text" name="uploadfile-2" id="uploadfile-2" readonly style="width:200px">
 			<a href="javascript:void();" class="btn btn-primary upload-btn"><i class="Hui-iconfont">&#xe642;</i> 选择文件</a>
 			<input type="file" multiple  name="myfile" class="input-file">

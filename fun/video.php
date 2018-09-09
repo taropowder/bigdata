@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "./about_db/print_list.php";
+include_once "print_list.php";
 include_once "connect.php";
 ?>
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ include_once "connect.php";
 <body>
 <header>
     <div class="container">
-        <a href="#" class="download-sec right">退出</a>
+        <a href="../" class="download-sec right">退出</a>
         <div class="profile-img">
             <a href="index.php" title="主页">
                 <img src="images/photo.png" alt="img" width="360px" height="330px">
@@ -88,7 +88,7 @@ include_once "connect.php";
                         echo "	<td>{$data['id']}</td>";
                         echo "	<td><a href='#' title='点击查看'>";
                         echo "		<div class='folio_small'>";
-                        echo "		   <a href='./shiPin.php?file_name={$data['name']}'>";
+                        echo "		   <a href='./shiPin.php?file_name={$data['name']}' target=\"_blank\">";
                         echo "			   <video src='$dir{$data['name']}' width='100%' height='100%' autoplay='false' loop='true'></video>";
                         echo "		   </a>";
                         echo "		</div>";
