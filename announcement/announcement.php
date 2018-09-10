@@ -3,18 +3,12 @@ if (isset($_GET['id'])) {
     include_once "../sqlhelper.php";
     $mysqli = new sqlhelper();
     $id = addslashes($_GET['id']);
-    $sql = "SELECT id,title,time,content FROM announcement";
+    $sql = "SELECT id,title,time,content FROM announcement  WHERE  id = $id";
     $res = $mysqli->execute_dql($sql);
     $announcement = $res->fetch_assoc();
-    $sql2 = "SELECT file_name FROM announcement_file WHERE file_name=$announcement[id]";
+    $sql2 = "SELECT file_name FROM announcement_file WHERE announcement_id=$announcement[id]";
     $res2 = $mysqli->execute_dql($sql2);
     $announcement_file = $res2->fetch_row();
-//    foreach ($announcement as $value){
-//        echo $value."<br/>";
-//    }
-//    foreach ($announcement_file as $value){
-//        echo $value."<br/>";
-//    }
 }
 ?>
 <!DOCTYPE html>
@@ -55,9 +49,9 @@ if (isset($_GET['id'])) {
             <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <?php echo $announcement['content']?>
             </p>
             <?php
-                foreach ($announcement_file as $value){
-                    echo "<li><a href='file/$value'>$value</a> </li>";
-                }
+            foreach ($announcement_file as $value){
+                echo "<li><a href='file/$value'>$value</a> </li>";
+            }
             ?>
         </div>
     </div>
